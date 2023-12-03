@@ -3,6 +3,8 @@
 <head>
     <title>Electrument</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -20,6 +22,8 @@
 
             --font-size: 1.25rem;
             --font-family: 'Inter', sans-serif;
+
+            --transition-time: 0.5s;
         }
 
         body {
@@ -40,6 +44,7 @@
             color: var(--color-bg);
             font-size: var(--font-size);
             font-family: var(--font-family);
+            transition: var(--transition-time);
         }
         input:focus,
         input:hover {
@@ -57,6 +62,7 @@
         summary {
             cursor: pointer;
             display: flex;
+            transition: var(--transition-time);
         }
         summary:hover {
             background-color: var(--color-priB);
@@ -86,6 +92,7 @@
             background-color: var(--color-priD);
             color: var(--color-bg);
             text-decoration: none;
+            transition: var(--transition-time);
         }
         .btn:hover {
             background-color: var(--color-fg);
