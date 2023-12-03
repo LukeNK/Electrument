@@ -117,10 +117,6 @@
         <p>Click on the cards to see more information</p>
         <div id="list"></div>
     </main>
-
-    <footer>
-
-    </footer>
 </body>
 
 <!-- js to get around fetching and stuff -->
@@ -202,6 +198,7 @@ for (const id in SongList) {
 if (document.location.hash) {
     search('A random string to hide all songs');
     SongList[document.location.hash.substring(1)].elm.style.display = 'block';
+    SongList[document.location.hash.substring(1)].elm.setAttribute('open', 'true')
 } else if (document.location.search) {
     let params = new URLSearchParams(document.location.search);
     const allowParams = ['query', 'name', 'artist', 'sheet']
