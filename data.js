@@ -119,13 +119,6 @@ let SongList = [
         thumbnail: 'https://www.pixiv.net/en/artworks/77588541',
     },
     {
-        name: 'Snowflake Memories',
-        artist: 'IdolM@ster Shiny Colors',
-        origin: 'Game IdolM@ster',
-        instrument: 'Piano',
-        thumbnail: 'https://www.pixiv.net/en/artworks/77588541',
-    },
-    {
         name: 'Little Parade',
         artist: 'Kdash',
         vocaloid: 'Hatsune Miku',
