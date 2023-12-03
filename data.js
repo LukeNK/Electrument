@@ -175,6 +175,8 @@ let SongList = [
         origin: 'Game Project Wingman OST for mission 11',
         instrument: 'Piano, guitar',
         youtube: 'https://www.youtube.com/watch?v=mSiNrTrm6VQ',
+        "piano sheet": './sheet/[Piano] Jose Pavli - Showdown.pdf',
+        "guitar sheet": './sheet/[Guitar] Jose Pavli - Showdown.pdf',
         thumbnail: 'https://www.deviantart.com/chrissanti01/art/PROJECT-WINGMAN-PW-MK-1-THE-CRIMSON-MONARCH-947698491',
     },
     {
