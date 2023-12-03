@@ -90,7 +90,7 @@ function search(query) {
         for (const key in song)
             if(
                 typeof(song[key]) == 'string'
-                && song[key].includes(query)
+                && song[key].toLowerCase().includes(query.toLowerCase())
             ) {
                 matched = true;
                 break;
