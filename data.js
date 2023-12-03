@@ -85,6 +85,7 @@ let SongList = [
         artist: 'Reina Ueda',
         origin: 'Anime Wandering Witch: The Journey of Elaina',
         instrument: 'Piano',
+        sheet: './sheet/[Piano] Reina Ueda - Literature.pdf',
         thumbnail: 'https://twitter.com/pioko_b/status/1344980241744158722',
     },
     {
@@ -135,6 +136,7 @@ let SongList = [
         artist: 'Kdash',
         vocaloid: 'Hatsune Miku',
         instrument: 'Piano',
+        sheet: './sheet/[Piano] Kdash - Sunset march.pdf',
         original: 'https://www.youtube.com/watch?v=ZLqrcMzbQAg',
         thumbnail: 'https://www.pixiv.net/en/artworks/67655952',
     },
@@ -143,6 +145,7 @@ let SongList = [
         artist: 'WADATAKEAKI',
         vocaloid: 'Hatsune Miku',
         instrument: 'Piano',
+        sheet: './sheet/[Piano] WADATAKEAKI - Bless Your Breath.pdf',
         thumbnail: 'https://www.pixiv.net/en/artworks/74995694',
     },
     {
@@ -157,6 +160,7 @@ let SongList = [
         artist: 'Saiph',
         vocaloid: 'Hatsune Miku',
         instrument: 'Piano',
+        sheet: './sheet/[Piano] Saiph - Pliocene no Tabibito.pdf',
         thumbnail: 'https://www.pixiv.net/en/artworks/100886455',
     },
     {
