@@ -36,6 +36,25 @@
             font-size: var(--font-size);
             font-family: var(--font-family);
         }
+
+        details {
+            margin-bottom: 1rem;
+            border-left: 0.5rem solid var(--color-priD);
+            padding-left: 1rem;
+        }
+
+        summary {
+            cursor: pointer;
+            padding: 1rem;
+        }
+        summary:hover {
+            background-color: var(--color-priD);
+            color: var(--color-bg);
+        }
+
+        dt {
+            text-transform: capitalize;
+        }
     </style>
 </head>
 
@@ -44,19 +63,13 @@
         <nav>
             <label>
                 Search for the name of the song
-                <input type="text">
+                <input type="text" oninput="search(this.value)">
             </label>
         </nav>
     </header>
 
     <main>
-        <div id="list">
-
-            <details>
-                <summary>Song name</summary>
-                <dl>Tempo</dl>
-            </details>
-        </div>
+        <div id="list"></div>
     </main>
 
     <footer>
@@ -68,10 +81,16 @@
 <script src="data.js"></script>
 <script>
 const dom = document;
+const mainList = dom.getElementById('list');
+
+function search(query) {
+    for (const song of SongList)
+        if (song.name.split(' ').includes(query))
+            song.elm.style.display = 'block';
+        else song.elm.style.display = 'none';
+}
 
 (() => {
-    let mainList = dom.getElementById('list');
-
     for (const id in SongList) {
         let curSong = dom.createElement('details'),
             summary = dom.createElement('summary'),
@@ -80,14 +99,22 @@ const dom = document;
 
         for (const key in SongList[id]) {
             let term = dom.createElement('dt'),
-                desc = dom.createElement('dd');
+                desc = dom.createElement('dd'),
+                content = SongList[id][key];
+
+            if (
+                typeof(content) == 'string'
+                && content.startsWith('http')
+            ) content = `<a href="${content}">${content}</a>`;
+
             term.innerHTML = key;
-            desc.innerHTML = SongList[id][key]
+            desc.innerHTML = content;
 
             curList.append(term, desc)
         }
 
         curSong.append(summary, curList);
+        SongList[id].elm = curSong;
         mainList.append(curSong)
     }
 })();
