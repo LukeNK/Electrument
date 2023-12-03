@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Electrument</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <style>
+        * { box-sizing: border-box; }
+
+        :root {
+            --color-bg: #fcf7ffff;
+            --color-fg: #343434ff;
+            --color-priB: #00ffffff;
+            --color-priD: #007affff;
+            --middle-grey: #898980ff;
+            --screamin-green: #87ff65ff;
+
+            --font-size: 1.25rem;
+            --font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--color-bg);
+            color: var(--color-fg);
+
+            font-size: var(--font-size);
+            font-family: var(--font-family);
+        }
+
+        input {
+            outline: none;
+            border: 1px solid var(--color-priB);
+            font-size: var(--font-size);
+            font-family: var(--font-family);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <label>
+                Search for the name of the song
+                <input type="text">
+            </label>
+        </nav>
+    </header>
+
+    <main>
+        <div id="list">
+
+            <details>
+                <summary>Song name</summary>
+                <dl>Tempo</dl>
+            </details>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+<!-- js to get around fetching and stuff -->
+<script src="data.js"></script>
+<script>
+const dom = document;
+
+(() => {
+    let mainList = dom.getElementById('list');
+
+    for (const id in SongList) {
+        let curSong = dom.createElement('details'),
+            summary = dom.createElement('summary'),
+            curList = dom.createElement('dl');
+        summary.innerHTML = SongList[id].name;
+
+        for (const key in SongList[id]) {
+            let term = dom.createElement('dt'),
+                desc = dom.createElement('dd');
+            term.innerHTML = key;
+            desc.innerHTML = SongList[id][key]
+
+            curList.append(term, desc)
+        }
+
+        curSong.append(summary, curList);
+        mainList.append(curSong)
+    }
+})();
+</script>
+</html>
