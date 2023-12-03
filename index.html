@@ -120,6 +120,11 @@ for (const id in SongList) {
         `${SongList[id].artist} - <b>${SongList[id].name}</b>`
 
     for (const key in SongList[id]) {
+        //  Skip a certain key
+        if ([
+            'name', 'artist'
+        ].includes(key)) continue;
+
         let term = dom.createElement('dt'),
             desc = dom.createElement('dd'),
             content = SongList[id][key];
