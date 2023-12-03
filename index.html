@@ -49,19 +49,55 @@
         details {
             border-left: 0.5rem solid var(--color-priD);
             border-top: 0.5rem solid var(--color-priD);
-            padding-left: 1rem;
+        }
+        details > dl {
+            margin-left: 1rem;
         }
 
         summary {
             cursor: pointer;
-            padding: 1rem;
+            display: flex;
         }
         summary:hover {
             background-color: var(--color-priB);
         }
+        summary > p {
+            flex: 1 1 10rem;
+        }
+        summary > p.artist{
+            flex-grow: 0.2;
+            margin-left: 1rem;
+        }
+        summary > p.id {
+            flex-basis: 5rem;
+            flex-grow: 0.01;
+        }
 
         dt {
             font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        .btn {
+            /* Link like button */
+            display: block;
+            border-radius: 1rem;
+            padding: 1rem;
+            background-color: var(--color-priD);
+            color: var(--color-bg);
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: var(--color-fg);
+        }
+
+        details > div {
+            /* Button list */
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem;
+        }
+        details > div > a {
             text-transform: capitalize;
         }
     </style>
@@ -78,6 +114,7 @@
     </header>
 
     <main>
+        <p>Click on the cards to see more information</p>
         <div id="list"></div>
     </main>
 
@@ -115,9 +152,13 @@ function search(query, searchKey) {
 for (const id in SongList) {
     let curSong = dom.createElement('details'),
         summary = dom.createElement('summary'),
-        curList = dom.createElement('dl');
-    summary.innerHTML =
-        `${SongList[id].artist} - <b>${SongList[id].name}</b>`
+        curList = dom.createElement('dl'),
+        btnList = dom.createElement('div');
+
+    summary.innerHTML = `
+        <p class="artist">${SongList[id].artist}</p>
+        <p><b>${SongList[id].name}</b></p>
+        <p class="id">ID: ${id}</p>`
 
     for (const key in SongList[id]) {
         //  Skip a certain key
@@ -125,9 +166,7 @@ for (const id in SongList) {
             'name', 'artist'
         ].includes(key)) continue;
 
-        let term = dom.createElement('dt'),
-            desc = dom.createElement('dd'),
-            content = SongList[id][key];
+        let content = SongList[id][key];
 
         if (
             typeof(content) == 'string'
@@ -136,15 +175,26 @@ for (const id in SongList) {
                 || content.startsWith('/')
                 || content.startsWith('./')
             )
-        ) content = `<a href="${content}">${content}</a>`;
+        ) {
+            // It is link, create a link-button
+            let btn = dom.createElement('a');
+            btn.classList.add('btn');
 
-        term.innerHTML = key;
-        desc.innerHTML = content;
+            btn.href = content;
+            btn.innerHTML = key;
 
-        curList.append(term, desc)
+            btnList.append(btn);
+        } else {
+            let term = dom.createElement('dt'),
+                desc = dom.createElement('dd');
+
+            term.innerHTML = key;
+            desc.innerHTML = content;
+            curList.append(term, desc)
+        }
     }
 
-    curSong.append(summary, curList);
+    curSong.append(summary, curList, btnList);
     SongList[id].elm = curSong;
     mainList.prepend(curSong); // oldest last
 }
@@ -154,7 +204,7 @@ if (document.location.hash) {
     SongList[document.location.hash.substring(1)].elm.style.display = 'block';
 } else if (document.location.search) {
     let params = new URLSearchParams(document.location.search);
-    const allowParams = ['query', 'name', 'artist']
+    const allowParams = ['query', 'name', 'artist', 'sheet']
     for (const param of allowParams) {
         if (params.get(param))
             if (param == 'query') search(params.get(param)); // genderal query
