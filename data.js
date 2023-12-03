@@ -202,6 +202,7 @@ let SongList = [
         origin: "Anime Onimai: I'm Now Your Sister OST",
         instrument: 'Piano',
         youtube: 'https://www.youtube.com/watch?v=SchOe4y7b1M',
+        sheet: './sheet/[Piano] Alisa Okehazama - Illumination.pdf',
         thumbnail: 'https://twitter.com/KoroB_Greey86/status/1638933279083737089/photo/1',
     },
     {
@@ -249,6 +250,7 @@ let SongList = [
         origin: 'The Amazing Digital Circus',
         instrument: 'Piano',
         youtube: 'https://www.youtube.com/watch?v=Jmk0g5obzkE',
+        sheet: './sheet/[Piano] Gooseworx - The Amazing Digital Circus Main Theme.pdf',
         original: 'https://www.youtube.com/watch?v=H-AT42lYGBg',
     },
     {
