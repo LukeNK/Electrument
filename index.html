@@ -46,7 +46,6 @@
         summary {
             cursor: pointer;
             padding: 1rem;
-            font-weight: bold;
         }
         summary:hover {
             background-color: var(--color-priB);
@@ -85,10 +84,21 @@ const dom = document;
 const mainList = dom.getElementById('list');
 
 function search(query) {
-    for (const song of SongList)
-        if (song.name.split(' ').includes(query))
-            song.elm.style.display = 'block';
+    for (const song of SongList) {
+        let matched = false;
+
+        for (const key in song)
+            if(
+                typeof(song[key]) == 'string'
+                && song[key].includes(query)
+            ) {
+                matched = true;
+                break;
+            }
+
+        if (matched) song.elm.style.display = 'block';
         else song.elm.style.display = 'none';
+    }
 }
 
 (() => {
@@ -96,7 +106,8 @@ function search(query) {
         let curSong = dom.createElement('details'),
             summary = dom.createElement('summary'),
             curList = dom.createElement('dl');
-        summary.innerHTML = SongList[id].name;
+        summary.innerHTML =
+            `${SongList[id].artist} - <b>${SongList[id].name}</b>`
 
         for (const key in SongList[id]) {
             let term = dom.createElement('dt'),
@@ -116,7 +127,7 @@ function search(query) {
 
         curSong.append(summary, curList);
         SongList[id].elm = curSong;
-        mainList.append(curSong)
+        mainList.prepend(curSong); // oldest last
     }
 })();
 </script>
