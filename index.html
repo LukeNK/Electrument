@@ -32,9 +32,18 @@
 
         input {
             outline: none;
-            border: 1px solid var(--color-priB);
+            width: 100%;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 1rem;
+            background-color: var(--color-priD);
+            color: var(--color-bg);
             font-size: var(--font-size);
             font-family: var(--font-family);
+        }
+        input:focus,
+        input:hover {
+            background-color: var(--color-fg);
         }
 
         details {
@@ -62,8 +71,8 @@
     <header>
         <nav>
             <label>
-                Search for the name of the song
-                <input type="text" oninput="search(this.value)">
+                Search for a song
+                <input type="text" oninput="search(this.value)" value="Search here">
             </label>
         </nav>
     </header>
@@ -83,13 +92,15 @@
 const dom = document;
 const mainList = dom.getElementById('list');
 
-function search(query) {
+function search(query, searchKey) {
+    // if searchKey is present, search for property on that key only
     for (const song of SongList) {
         let matched = false;
 
         for (const key in song)
             if(
-                typeof(song[key]) == 'string'
+                ((searchKey)? searchKey == key : true)
+                && typeof(song[key]) == 'string'
                 && song[key].toLowerCase().includes(query.toLowerCase())
             ) {
                 matched = true;
@@ -101,34 +112,45 @@ function search(query) {
     }
 }
 
-(() => {
-    for (const id in SongList) {
-        let curSong = dom.createElement('details'),
-            summary = dom.createElement('summary'),
-            curList = dom.createElement('dl');
-        summary.innerHTML =
-            `${SongList[id].artist} - <b>${SongList[id].name}</b>`
+for (const id in SongList) {
+    let curSong = dom.createElement('details'),
+        summary = dom.createElement('summary'),
+        curList = dom.createElement('dl');
+    summary.innerHTML =
+        `${SongList[id].artist} - <b>${SongList[id].name}</b>`
 
-        for (const key in SongList[id]) {
-            let term = dom.createElement('dt'),
-                desc = dom.createElement('dd'),
-                content = SongList[id][key];
+    for (const key in SongList[id]) {
+        let term = dom.createElement('dt'),
+            desc = dom.createElement('dd'),
+            content = SongList[id][key];
 
-            if (
-                typeof(content) == 'string'
-                && content.startsWith('http')
-            ) content = `<a href="${content}">${content}</a>`;
+        if (
+            typeof(content) == 'string'
+            && content.startsWith('http')
+        ) content = `<a href="${content}">${content}</a>`;
 
-            term.innerHTML = key;
-            desc.innerHTML = content;
+        term.innerHTML = key;
+        desc.innerHTML = content;
 
-            curList.append(term, desc)
-        }
-
-        curSong.append(summary, curList);
-        SongList[id].elm = curSong;
-        mainList.prepend(curSong); // oldest last
+        curList.append(term, desc)
     }
-})();
+
+    curSong.append(summary, curList);
+    SongList[id].elm = curSong;
+    mainList.prepend(curSong); // oldest last
+}
+
+if (document.location.hash) {
+    search('A random string to hide all songs');
+    SongList[document.location.hash.substring(1)].elm.style.display = 'block';
+} else if (document.location.search) {
+    let params = new URLSearchParams(document.location.search);
+    const allowParams = ['query', 'name', 'artist']
+    for (const param of allowParams) {
+        if (params.get(param))
+            if (param == 'query') search(params.get(param)); // genderal query
+            else search(params.get(param), param);
+    }
+}
 </script>
 </html>
