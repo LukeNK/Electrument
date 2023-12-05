@@ -37,6 +37,8 @@ let SongList = [
         origin: 'Anime Yuru Camp',
         instrument: 'Piano',
         youtube: 'https://www.youtube.com/watch?v=9K75R6KnigY',
+        sheet: './sheet/[Piano] Yuru Camp Theme.pdf',
+        MIDI: './midi/[Piano] Yuru Camp Theme.mid',
         thumbnail: 'https://wall.alphacoders.com/big.php?i=925917',
         background: 'https://wall.alphacoders.com/big.php?i=1010451'
     },
