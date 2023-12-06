@@ -62,6 +62,7 @@
         summary {
             cursor: pointer;
             display: flex;
+            flex-wrap: wrap;
             transition: var(--transition-time);
         }
         summary:hover {
@@ -69,10 +70,10 @@
         }
         summary > p {
             flex: 1 1 10rem;
+            margin-left: 1rem;
         }
         summary > p.artist{
             flex-grow: 0.2;
-            margin-left: 1rem;
         }
         summary > p.id {
             flex-basis: 5rem;
