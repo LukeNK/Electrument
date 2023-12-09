@@ -264,4 +264,13 @@ let SongList = [
         original: 'https://www.youtube.com/watch?v=8K0npQ--ACw',
         thumbnail: 'https://www.pixiv.net/en/artworks/66803694'
     },
+    {
+        name: 'Last Score',
+        artist: 'Sekikomi Gohan',
+        vocaloid: 'Hatsune Miku',
+        instrument: 'Piano',
+        youtube: 'https://youtu.be/vG12RuWFnB4',
+        original: 'https://www.youtube.com/watch?v=zAWu9BK_V5M',
+        thumbnail: 'https://twitter.com/wamavwv/status/1666416069530255362'
+    },
 ]
