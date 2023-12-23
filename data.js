@@ -282,4 +282,15 @@ let SongList = [
         original: 'https://www.youtube.com/watch?v=J_hJDitrh8M',
         thumbnail: 'https://medibang.com/picture/wk2206152216405400014408735/'
     },
+    {
+        name: "But I'm Not Interested In Christmas At All",
+        artist: 'Camellia',
+        singer: 'Nanahira',
+        instrument: 'Piano',
+        youtube: 'https://youtu.be/eoLBplkEDC0',
+        original: 'https://www.youtube.com/watch?v=jFt4GIgtpBE',
+        sheet: './sheet/[Piano] Camellia - But I\'m Not Interested In Christmas At All.pdf',
+        MIDI: './midi/[Piano] Camellia - But I\'m Not Interested In Christmas At All.mid',
+        thumbnail: 'From the original video'
+    },
 ]
