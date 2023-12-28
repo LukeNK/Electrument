@@ -293,4 +293,14 @@ let SongList = [
         MIDI: './midi/[Piano] Camellia - But I\'m Not Interested In Christmas At All.mid',
         thumbnail: 'From the original video'
     },
+    {
+        name: 'Alice Good Night',
+        artist: 'Yuk-Cheung Chun',
+        origin: 'Game DEEMO soundtrack',
+        instrument: 'Piano',
+        youtube: 'https://youtu.be/vyNxzem7S0Q',
+        sheet: './sheet/[Piano] Yuk-Cheung Chun - Alice Good Night.pdf',
+        MIDI: './midi/[Piano] Yuk-Cheung Chun - Alice Good Night.mid',
+        thumbnail: 'https://www.pixiv.net/en/artworks/88078058'
+    },
 ]
