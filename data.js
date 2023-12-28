@@ -298,7 +298,7 @@ let SongList = [
         artist: 'Yuk-Cheung Chun',
         origin: 'Game DEEMO soundtrack',
         instrument: 'Piano',
-        youtube: 'https://youtu.be/vyNxzem7S0Q',
+        youtube: 'https://youtu.be/PHCFGiW8UC0',
         sheet: './sheet/[Piano] Yuk-Cheung Chun - Alice Good Night.pdf',
         MIDI: './midi/[Piano] Yuk-Cheung Chun - Alice Good Night.mid',
         thumbnail: 'https://www.pixiv.net/en/artworks/88078058'
