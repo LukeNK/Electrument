@@ -303,4 +303,14 @@ let SongList = [
         MIDI: './midi/[Piano] Yuk-Cheung Chun - Alice Good Night.mid',
         thumbnail: 'https://www.pixiv.net/en/artworks/88078058'
     },
+    {
+        name: 'Alice in the Freezer',
+        artist: 'Orangestar',
+        vocaloid: 'IA',
+        instrument: 'Piano',
+        youtube: 'https://youtu.be/v7aC1TcEtJc',
+        original: 'https://www.youtube.com/watch?v=jQmYZWjLwzw',
+        MIDI: './midi/[Piano] Orangestar - Alice in the Freezer.mid',
+        thumbnail: 'https://www.pixiv.net/en/artworks/109971529'
+    },
 ]
