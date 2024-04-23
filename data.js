@@ -313,4 +313,13 @@ let SongList = [
         MIDI: './midi/[Piano] Orangestar - Alice in the Freezer.mid',
         thumbnail: 'https://www.pixiv.net/en/artworks/109971529'
     },
+    {
+        name: 'Yellow Rose',
+        artist: 'Ros Mo',
+        instrument: 'Piano',
+        youtube: 'https://youtu.be/z-gjXq-mgEM',
+        original: 'https://www.youtube.com/watch?v=1L7gwpGZ5Oc',
+        MIDI: './midi/[Piano] Ros Mo - Yellow Rose.mid',
+        thumbnail: 'From the original video'
+    },
 ]
