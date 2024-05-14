@@ -322,4 +322,15 @@ let SongList = [
         MIDI: './midi/[Piano] Ros Mo - Yellow Rose.mid',
         thumbnail: 'From the original video'
     },
+    {
+        name: 'Only to Me in 10 Years',
+        artist: '*Luna',
+        singer: 'Kohana Lam',
+        instrument: 'Piano',
+        youtube: 'https://youtu.be/rQFF95J0IzE',
+        original: 'https://www.youtube.com/watch?v=A0z7PeJF5ug',
+        sheet: './sheet/[Piano] Luna - Only to Me in 10 Years.pdf',
+        MIDI: './midi/[Piano] Luna - Only to Me in 10 Years.mid',
+        thumbnail: 'https://www.pixiv.net/en/artworks/84932449'
+    },
 ]
