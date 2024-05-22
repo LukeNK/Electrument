@@ -333,4 +333,15 @@ let SongList = [
         MIDI: './midi/[Piano] Luna - Only to Me in 10 Years.mid',
         thumbnail: 'https://www.pixiv.net/en/artworks/84932449'
     },
+    {
+        name: 'Someday in That Summer (2023 ver.)',
+        artist: '*Luna',
+        singer: 'Nenne',
+        instrument: 'Piano',
+        youtube: 'https://youtu.be/xBraovrvFHI',
+        original: 'https://www.youtube.com/watch?v=A0z7PeJF5ug',
+        sheet: './sheet/[Piano] Luna - Someday in That Summer (2023 ver.).pdf',
+        MIDI: './midi/[Piano] Luna - Someday in That Summer (2023 ver.).mid',
+        thumbnail: 'https://x.com/Hanamoto410/status/1411122736932421633/photo/1'
+    },
 ]
