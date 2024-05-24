@@ -34,6 +34,15 @@
             font-family: var(--font-family);
         }
 
+        button {
+            font-size: inherit;
+            width: 100%;
+            padding: 0.5rem;
+            cursor: pointer;
+            background-color: transparent;
+            border: 0.5rem solid var(--color-priD);;
+        }
+
         input {
             outline: none;
             width: 100%;
@@ -123,8 +132,9 @@
     </header>
 
     <main>
-        <p>Click on the cards to see more information. Please note that the score sheet exporting is not working right now.</p>
+        <p>Click on the cards to see more information.</p>
         <div id="list"></div>
+        <button id="btn-return" onclick="search('')">Return to song list</button>
     </main>
 </body>
 
@@ -152,6 +162,10 @@ function search(query, searchKey) {
         if (matched) song.elm.style.display = 'block';
         else song.elm.style.display = 'none';
     }
+
+    // return button
+    if (query) document.getElementById('btn-return').style.display = '';
+    else document.getElementById('btn-return').style.display = 'none';
 }
 
 for (const id in SongList) {
