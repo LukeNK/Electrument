@@ -355,4 +355,13 @@ let SongList = [
         MIDI: './midi/[Piano] Luna - Check This Out.mid',
         thumbnail: 'https://x.com/omrice4869/status/1555867000261341184/photo/1'
     },
+    {
+        name: 'Three Bar Logos',
+        artist: 'Jami Lynne',
+        origin: 'Game OMORI (Ost 027)',
+        instrument: 'Piano',
+        youtube: 'https://youtu.be/KUBd0QzEFHY',
+        original: 'https://www.youtube.com/watch?v=RkQ1cgvkylI',
+        thumbnail: 'https://www.pixiv.net/en/artworks/104948897'
+    },
 ]
