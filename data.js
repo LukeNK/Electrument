@@ -362,6 +362,8 @@ let SongList = [
         instrument: 'Piano',
         youtube: 'https://youtu.be/KUBd0QzEFHY',
         original: 'https://www.youtube.com/watch?v=RkQ1cgvkylI',
+        sheet: './sheet/[Piano] Jami Lynne - Three Bar Logos (OMORI OST 027).pdf',
+        MIDI: './midi/[Piano] Jami Lynne - Three Bar Logos (OMORI OST 027).mid',
         thumbnail: 'https://www.pixiv.net/en/artworks/104948897'
     },
 ]
