@@ -366,4 +366,15 @@ let SongList = [
         MIDI: './midi/[Piano] Jami Lynne - Three Bar Logos (OMORI OST 027).mid',
         thumbnail: 'https://www.pixiv.net/en/artworks/104948897'
     },
+    {
+        name: 'A Home For Flowers (Tulip)',
+        artist: 'Pedro Silva',
+        origin: 'Game OMORI (Ost 013)',
+        instrument: 'Piano',
+        youtube: 'https://youtu.be/sczOcWoD0aU',
+        original: 'https://www.youtube.com/watch?v=u2xW23u4qEY',
+        sheet: './sheet/[Piano] Pedro Silva - A Home for Flowers (Tulip) (OMORI OST 013).pdf',
+        MIDI: './midi/[Piano] Pedro Silva - A Home for Flowers (Tulip) (OMORI OST 013).mid',
+        thumbnail: 'https://x.com/unitaroukun/status/1798776342831563179'
+    },
 ]
