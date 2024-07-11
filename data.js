@@ -377,4 +377,13 @@ let SongList = [
         MIDI: './midi/[Piano] Pedro Silva - A Home for Flowers (Tulip) (OMORI OST 013).mid',
         thumbnail: 'https://x.com/unitaroukun/status/1798776342831563179'
     },
+    {
+        name: 'Good Morning',
+        artist: 'Jami Lynne',
+        origin: 'Game OMORI (Ost 177)',
+        instrument: 'Piano, guitar',
+        youtube: 'https://youtu.be/Fp7lL-F7R3U',
+        original: 'https://www.youtube.com/watch?v=1yIcUg5FyIs',
+        thumbnail: 'https://x.com/doroidsan/status/1681693771355004931'
+    },
 ]
