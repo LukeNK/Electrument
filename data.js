@@ -386,4 +386,15 @@ let SongList = [
         original: 'https://www.youtube.com/watch?v=1yIcUg5FyIs',
         thumbnail: 'https://x.com/doroidsan/status/1681693771355004931'
     },
+    {
+        name: 'In My World',
+        French: 'Dans mon Monde',
+        artist: 'SHINDEHAI',
+        "Alter/Ego": 'ALYS',
+        instrument: 'Piano',
+        youtube: 'https://youtu.be/7GeftUaYlmE',
+        sheet: './sheet/[Piano] SHINDEHAI - Dans mon Monde.pdf',
+        MIDI: './midi/[Piano] SHINDEHAI - Dans mon Monde.mid',
+        thumbnail: 'https://www.pixiv.net/en/artworks/62821147'
+    },
 ]
