@@ -397,4 +397,17 @@ let SongList = [
         MIDI: './midi/[Piano] SHINDEHAI - Dans mon Monde.mid',
         thumbnail: 'https://www.pixiv.net/en/artworks/62821147'
     },
+    {
+        name: 'Tricolor',
+        Japanese: 'トリコロール',
+        artist: 'kz(livetune) × Hachiouji-P × Hachiya Nanashi',
+        from: 'Official theme song for Music Chokaigi 2022',
+        vocaloid: 'Hatsune Miku',
+        instrument: 'Piano',
+        youtube: 'https://youtu.be/7-1Ai47ouGk',
+        original: 'https://www.youtube.com/watch?v=96U1Rgx_JiU',
+        sheet: './sheet/[Piano] kz × Hachiouji × Hachiya Nanashi - Tricolor.pdf',
+        MIDI: './midi/[Piano] kz × Hachiouji × Hachiya Nanashi - Tricolor.mid',
+        thumbnail: "From the song's album cover"
+    },
 ]
