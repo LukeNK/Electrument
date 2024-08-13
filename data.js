@@ -398,6 +398,18 @@ let SongList = [
         thumbnail: 'https://www.pixiv.net/en/artworks/62821147'
     },
     {
+        name: 'Lois Medley',
+        songs: 'Shaved Ice, Night, Spotlight, Macaron, Tiramisu',
+        artist: 'Lois',
+        "Artist's SoundCloud": 'https://soundcloud.com/lois1104',
+        "Artist's YouTube": 'https://www.youtube.com/@Loismusic',
+        instrument: 'Piano',
+        youtube: 'https://youtu.be/B-HwthdZpPM',
+        sheet: './sheet/[Piano duet] Lois Medley.pdf',
+        MIDI: './midi/[Piano duet] Lois Medley.mid',
+        thumbnail: 'https://www.pixiv.net/en/artworks/121247469',
+    },
+    {
         name: 'Tricolor',
         Japanese: 'トリコロール',
         artist: 'kz(livetune) × Hachiouji-P × Hachiya Nanashi',
