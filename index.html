@@ -128,10 +128,24 @@
 
         footer {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
             padding: 3rem;
         }
+        footer > * { flex: 1 0 20rem; }
+        footer div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        footer table {
+            width: 100%
+        }
+        th {
+            text-align: right;
+        }
         footer a {
+            text-align: center;
             color: var(--middle-grey);
             text-decoration: none;
         }
@@ -159,11 +173,38 @@
     </main>
 
     <footer>
-        <a href="https://www.youtube.com/@electrument">YouTube</a>
-        <span>•</span>
-        <a href="https://github.com/LukeNK/Electrument/README.md">Terms and conditions</a>
-        <span>•</span>
-        <a href="https://github.com/LukeNK/Electrument">Source code</a>
+        <table>
+            <colgroup>
+                <col style="width: 50%;">
+                <col>
+                <col>
+            </colgroup>
+            <tr>
+                <th>Number of songs:</th>
+                <td id="songCount" colspan="2"></td>
+
+            </tr>
+            <tr>
+                <th>Piano arrangements:</th>
+                <td id="pianoCount"></td>
+                <td id="pianoRatio"></td>
+            </tr>
+            <tr>
+                <th>MIDI available:</th>
+                <td id="midiCount"></td>
+                <td id="midiRatio"></td>
+            </tr>
+            <tr>
+                <th>Sheet available:</th>
+                <td id="sheetCount"></td>
+                <td id="sheetRatio"></td>
+            </tr>
+        </table>
+        <div>
+            <a href="https://www.youtube.com/@electrument">YouTube</a>
+            <a href="https://github.com/LukeNK/Electrument/blob/main/README.md">Terms and conditions</a>
+            <a href="https://github.com/LukeNK/Electrument">Source code</a>
+        </div>
     </footer>
 </body>
 
@@ -172,6 +213,12 @@
 <script>
 const dom = document;
 const mainList = dom.getElementById('list');
+
+let stats = {
+    piano: 0,
+    midi: 0,
+    sheet: 0,
+}
 
 function search(query, searchKey) {
     // if searchKey is present, search for property on that key only
@@ -201,8 +248,8 @@ function search(query, searchKey) {
     lastMatch.setAttribute('open', '');
 
     // return button
-    if (query) document.getElementById('btn-return').style.display = '';
-    else document.getElementById('btn-return').style.display = 'none';
+    if (query) dom.getElementById('btn-return').style.display = '';
+    else dom.getElementById('btn-return').style.display = 'none';
 }
 
 for (const id in SongList) {
@@ -240,6 +287,10 @@ for (const id in SongList) {
             btn.innerHTML = key;
 
             btnList.append(btn);
+
+            // stats count
+            if (content.includes('/sheet/')) stats.sheet++;
+            else if (content.includes('/midi/')) stats.midi++;
         } else {
             let term = dom.createElement('dt'),
                 desc = dom.createElement('dd');
@@ -247,6 +298,9 @@ for (const id in SongList) {
             term.innerHTML = key;
             desc.innerHTML = content;
             curList.append(term, desc)
+
+            // stats count
+            if (content == 'Piano') stats.piano++;
         }
     }
 
@@ -255,18 +309,28 @@ for (const id in SongList) {
     mainList.prepend(curSong); // oldest last
 }
 
-if (document.location.hash) {
+// check location for hash
+if (dom.location.hash) {
     search('A random string to hide all songs');
-    SongList[document.location.hash.substring(1)].elm.style.display = 'block';
-    SongList[document.location.hash.substring(1)].elm.setAttribute('open', 'true')
-} else if (document.location.search) {
-    let params = new URLSearchParams(document.location.search);
+    SongList[dom.location.hash.substring(1)].elm.style.display = 'block';
+    SongList[dom.location.hash.substring(1)].elm.setAttribute('open', 'true')
+} else if (dom.location.search) {
+    let params = new URLSearchParams(dom.location.search);
     const allowParams = ['query', 'name', 'artist', 'sheet']
     for (const param of allowParams) {
         if (params.get(param))
             if (param == 'query') search(params.get(param)); // genderal query
             else search(params.get(param), param);
     }
+}
+
+// status report
+dom.getElementById('songCount').innerText = SongList.length;
+for (const key in stats) {
+    dom.getElementById(key + 'Count').innerText =
+        stats[key];
+    dom.getElementById(key + 'Ratio').innerText =
+        ~~(stats[key] / SongList.length * 100) + '%';
 }
 </script>
 </html>
