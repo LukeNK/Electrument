@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Electrument</title>
-
     <meta charset="UTF-8">
+
+    <title>Electrument song database</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -125,6 +125,20 @@
         details > div > a {
             text-transform: capitalize;
         }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            padding: 3rem;
+        }
+        footer a {
+            color: var(--middle-grey);
+            text-decoration: none;
+        }
+        footer span {
+            margin: 0 1rem;
+            color: var(--middle-grey);
+        }
     </style>
 </head>
 
@@ -143,6 +157,14 @@
         <div id="list"></div>
         <button id="btn-return" onclick="search('')">Return to song list</button>
     </main>
+
+    <footer>
+        <a href="https://www.youtube.com/@electrument">YouTube</a>
+        <span>•</span>
+        <a href="https://github.com/LukeNK/Electrument/README.md">Terms and conditions</a>
+        <span>•</span>
+        <a href="https://github.com/LukeNK/Electrument">Source code</a>
+    </footer>
 </body>
 
 <!-- js to get around fetching and stuff -->
@@ -153,6 +175,7 @@ const mainList = dom.getElementById('list');
 
 function search(query, searchKey) {
     // if searchKey is present, search for property on that key only
+    let lastMatch; // the last song that was matched to open details
     for (const song of SongList) {
         let matched = false;
 
@@ -166,9 +189,16 @@ function search(query, searchKey) {
                 break;
             }
 
-        if (matched) song.elm.style.display = 'block';
-        else song.elm.style.display = 'none';
+        if (matched) {
+            song.elm.style.display = 'block';
+            lastMatch = song.elm;
+        } else {
+            song.elm.style.display = 'none';
+            song.elm.removeAttribute('open');
+        }
     }
+
+    lastMatch.setAttribute('open', '');
 
     // return button
     if (query) document.getElementById('btn-return').style.display = '';
