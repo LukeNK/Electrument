@@ -426,4 +426,14 @@ let SongList = [
         MIDI: './midi/[Piano] kz × Hachiouji × Hachiya Nanashi - Tricolor.mid',
         thumbnail: "From the song's album cover"
     },
+    {
+        name: 'Felicity',
+        artist: 'Sungha Jung',
+        instrument: 'Piano',
+        youtube: 'https://youtu.be/QpwkmqcQe_4',
+        original: 'https://www.youtube.com/watch?v=aDo3AZyPvoo',
+        sheet: './sheet/[Piano] Sungha Jung - Felicity.pdf',
+        MIDI: './midi/[Piano] Sungha Jung - Felicity.mid',
+        thumbnail: "From the original music video"
+    },
 ]
