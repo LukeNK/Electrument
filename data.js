@@ -436,4 +436,15 @@ let SongList = [
         MIDI: './midi/[Piano] Sungha Jung - Felicity.mid',
         thumbnail: "From the original music video"
     },
+    {
+        name: 'My Best Wishes!',
+        artist: 'Haruse Mimiru',
+        from: '24th ProSeka NEXT Entries',
+        instrument: 'Piano',
+        youtube: 'https://youtu.be/isuRJsDWck8',
+        original: 'https://www.youtube.com/watch?v=uA1SCrIBD-o',
+        sheet: './sheet/[Piano] Haruse Mimiru - My Best Wishes!.pdf',
+        MIDI: './midi/[Piano] Haruse Mimiru - My Best Wishes!.mid',
+        thumbnail: 'https://www.pixiv.net/en/artworks/121981104'
+    },
 ]
