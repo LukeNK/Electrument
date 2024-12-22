@@ -440,11 +440,23 @@ let SongList = [
         name: 'My Best Wishes!',
         artist: 'Haruse Mimiru',
         from: '24th ProSeka NEXT Entries',
+        vocaloid: 'Hatsune Miku',
         instrument: 'Piano',
         youtube: 'https://youtu.be/isuRJsDWck8',
         original: 'https://www.youtube.com/watch?v=uA1SCrIBD-o',
         sheet: './sheet/[Piano] Haruse Mimiru - My Best Wishes!.pdf',
         MIDI: './midi/[Piano] Haruse Mimiru - My Best Wishes!.mid',
         thumbnail: 'https://www.pixiv.net/en/artworks/121981104'
+    },
+    {
+        name: 'If Summer Is Calling Us (2024 ver.)',
+        Japanese: '夏が僕らを呼ぶのなら',
+        artist: '*Luna',
+        instrument: 'Piano',
+        youtube: 'https://youtu.be/EyQokq_aYgM',
+        original: 'https://www.youtube.com/watch?v=d8P4Jq4lGqc',
+        sheet: './sheet/[Piano] Luna - If Summer Is Calling Us (2024 ver.).pdf',
+        MIDI: './midi/[Piano] Luna - If Summer Is Calling Us (2024 ver.).mid',
+        thumbnail: 'https://x.com/JiatuJiatu16/status/1837874155469086785'
     },
 ]
