@@ -459,4 +459,16 @@ let SongList = [
         MIDI: './midi/[Piano] Luna - If Summer Is Calling Us (2024 ver.).mid',
         thumbnail: 'https://x.com/JiatuJiatu16/status/1837874155469086785'
     },
+    {
+        name: 'Fiction',
+        Japanese: 'フィクション',
+        artist: 'Qeiru',
+        vocaloid: 'IA',
+        instrument: 'Piano',
+        youtube: 'https://youtu.be/Vayx5lOonWM',
+        original: 'https://www.youtube.com/watch?v=GSm18BkoVbc',
+        sheet: './sheet/[Piano] Qeiru - Fiction.pdf',
+        MIDI: './midi/[Piano] Qeiru - Fiction.mid',
+        thumbnail: 'https://x.com/furi0831/status/1417111909506027523'
+    },
 ]
