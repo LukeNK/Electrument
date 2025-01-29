@@ -471,4 +471,16 @@ let SongList = [
         MIDI: './midi/[Piano] Qeiru - Fiction.mid',
         thumbnail: 'https://x.com/furi0831/status/1417111909506027523'
     },
+    {
+        name: 'Our Summer Will Come Again',
+        Japanese: '僕らの夏はまた巡って',
+        artist: '*Luna',
+        vocaloid: 'IA',
+        instrument: 'Piano',
+        youtube: 'https://youtu.be/hzFfIC98Oyo',
+        original: 'https://www.youtube.com/watch?v=HhmCvEEBqsA',
+        sheet: './sheet/[Piano] Luna - Our Summer Will Come Again.pdf',
+        MIDI: './midi/[Piano] Luna - Our Summer Will Come Again.mid',
+        thumbnail: 'https://www.pixiv.net/en/artworks/76296090'
+    },
 ]
