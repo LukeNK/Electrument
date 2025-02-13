@@ -483,4 +483,12 @@ let SongList = [
         MIDI: './midi/[Piano] Luna - Our Summer Will Come Again.mid',
         thumbnail: 'https://www.pixiv.net/en/artworks/76296090'
     },
+    {
+        name: 'Would You Be So Kind',
+        artist: 'Dodie Clark',
+        'Cover signer': 'OpenUTAU ALYS',
+        instrument: 'Guitar',
+        youtube: 'https://youtu.be/SyMruEbn3_0',
+        thumbnail: 'https://www.pixiv.net/en/artworks/76296090'
+    },
 ]
