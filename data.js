@@ -489,6 +489,6 @@ let SongList = [
         'Cover signer': 'OpenUTAU ALYS',
         instrument: 'Guitar',
         youtube: 'https://youtu.be/SyMruEbn3_0',
-        thumbnail: 'https://www.pixiv.net/en/artworks/76296090'
+        thumbnail: 'From the original album cover'
     },
 ]
