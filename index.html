@@ -320,7 +320,7 @@ if (dom.location.hash) {
     const allowParams = ['query', 'name', 'artist', 'sheet']
     for (const param of allowParams) {
         if (params.get(param))
-            if (param == 'query') search(params.get(param)); // genderal query
+            if (param == 'query') search(params.get(param)); // general query
             else search(params.get(param), param);
     }
 }
