@@ -495,10 +495,10 @@ let SongList = [
         name: 'The Greatest Gift',
         artist: 'Leroy Sanchez',
         instrument: 'Piano',
-        youtube: '',
+        youtube: 'https://youtu.be/kak4ELqZJNA',
         original: 'https://www.youtube.com/watch?v=BrGoXOhQ1qg',
         sheet: './sheet/[Piano] Leroy Sanchez - The Greatest Gift.pdf',
         MIDI: './midi/[Piano] Leroy Sanchez - The Greatest Gift.mid',
-        thumbnail: ''
+        thumbnail: 'From the original album cover'
     },
 ]
