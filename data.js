@@ -501,4 +501,16 @@ let SongList = [
         MIDI: './midi/[Piano] Leroy Sanchez - The Greatest Gift.mid',
         thumbnail: 'From the original album cover'
     },
+    {
+        name: 'Hello Sekai',
+        Japanese: 'ハローセカイ',
+        artist: 'DECO*27',
+        vocaloid: 'Hatsune Miku',
+        instrument: 'Piano',
+        youtube: 'https://youtu.be/hLUgYBOxFQo',
+        original: 'https://www.youtube.com/watch?v=t5U0rrj0dio',
+        sheet: './sheet/[Piano] DECO27 - Hello Sekai.pdf',
+        MIDI: './midi/[Piano] DECO27 - Hello Sekai.mid',
+        thumbnail: 'https://x.com/DECO27/status/1888588567406117013'
+    },
 ]
