@@ -21,6 +21,6 @@ I reserved the right to change the terms and conditions without prior notice, bu
 
 However, rest assured, I will try my best to refrain from unnecessarily modifying it; specifically, I want to commit to these promises:
 - My materials are fully accessible and free for everybody;
-- Everybody is allowed to modify and repost my materials without my explicit permission, provided that they properly credit me.
+- Everybody is can modify and repost my materials without asking for my permission, if they properly credit me.
 
-Now, let's go and spread these melodies to the world!
+Now, let's together go and spread these melodies to the world!
