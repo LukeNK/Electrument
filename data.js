@@ -513,4 +513,16 @@ let SongList = [
         MIDI: './midi/[Piano] DECO27 - Hello Sekai.mid',
         thumbnail: 'https://x.com/DECO27/status/1888588567406117013'
     },
+    {
+        name: 'a little lights',
+        Japanese: '小さな光だけど',
+        artist: 'Ichinose Lupo',
+        vocaloid: 'Hatsune Miku',
+        instrument: 'Piano',
+        youtube: 'https://youtu.be/YthdS31ZcEs',
+        original: 'https://youtube.com/watch?v=Au0Mp5goB9k',
+        sheet: './sheet/[Piano] Ichinose Lupo - a little lights.pdf',
+        MIDI: './midi/[Piano] Ichinose Lupo - a little lights.mid',
+        thumbnail: 'https://x.com/MerunoMeru88/status/1618945224348418054'
+    },
 ]
