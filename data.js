@@ -525,4 +525,15 @@ let SongList = [
         MIDI: './midi/[Piano] Ichinose Lupo - a little lights.mid',
         thumbnail: 'https://x.com/MerunoMeru88/status/1618945224348418054'
     },
+    {
+        name: 'Smile to Smile',
+        artist: 'Ichinose Lupo',
+        vocaloid: 'Kagamine Rin',
+        instrument: 'Piano',
+        youtube: 'https://youtu.be/iH7LVsHbjYk',
+        original: 'https://www.youtube.com/watch?v=ESeLcQhnyDE',
+        sheet: './sheet/[Piano] Ichinose Lupo - Smile to Smile.pdf',
+        MIDI: './midi/[Piano] Ichinose Lupo - Smile to Smile.mid',
+        thumbnail: 'https://x.com/warabimoti_yoz/status/1637362641688743937'
+    },
 ]
