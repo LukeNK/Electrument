@@ -536,4 +536,16 @@ let SongList = [
         MIDI: './midi/[Piano] Ichinose Lupo - Smile to Smile.mid',
         thumbnail: 'https://x.com/warabimoti_yoz/status/1637362641688743937'
     },
+    {
+        name: 'Countryside Song',
+        artist: 'Adrian Talens',
+        game: 'Poly Bridge',
+        instrument: 'Piano',
+        youtube: 'https://youtu.be/ZmROb5GY0uY',
+        original: 'https://www.youtube.com/watch?v=WGQmHllBm7U',
+        "Album's Bandcamp": 'https://adriantalens.bandcamp.com/album/poly-bridge-original-soundtrack',
+        sheet: './sheet/[Piano] Adrian Talens - Countryside Song.pdf',
+        MIDI: './midi/[Piano] Adrian Talens - Countryside Song.mid',
+        thumbnail: 'From Poly Bridge 1 Steam page'
+    },
 ]
