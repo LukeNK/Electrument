@@ -548,4 +548,14 @@ let SongList = [
         MIDI: './midi/[Piano] Adrian Talens - Countryside Song.mid',
         thumbnail: 'From Poly Bridge 1 Steam page'
     },
+    {
+        name: 'If I Were to Die',
+        artist: 'YonKaGor',
+        instrument: 'Piano',
+        youtube: 'https://youtu.be/fyrG_7eBwTM',
+        original: 'https://www.youtube.com/watch?v=HT8lAKCfeH0',
+        sheet: './sheet/[Piano] YonKaGor - If I Were to Die.pdf',
+        MIDI: './midi/[Piano] YonKaGor - If I Were to Die.mid',
+        thumbnail: 'https://x.com/YonKaGor/status/1969417189053645270'
+    },
 ]
