@@ -486,7 +486,7 @@ let SongList = [
     {
         name: 'Would You Be So Kind',
         artist: 'Dodie Clark',
-        'Cover signer': 'OpenUTAU ALYS',
+        'Cover singer': 'OpenUTAU ALYS',
         instrument: 'Guitar',
         youtube: 'https://youtu.be/SyMruEbn3_0',
         thumbnail: 'From the original album cover'
