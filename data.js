@@ -558,4 +558,17 @@ let SongList = [
         MIDI: './midi/[Piano] YonKaGor - If I Were to Die.mid',
         thumbnail: 'https://x.com/YonKaGor/status/1969417189053645270'
     },
+    {
+        name: 'a little lights',
+        Japanese: '小さな光だけど',
+        artist: 'Ichinose Lupo',
+        vocaloid: 'Hatsune Miku',
+        'Cover singer': 'OpenUTAU ALYS',
+        instrument: 'Piano',
+        youtube: 'https://youtu.be/TxX-mOqJ4dw',
+        original: 'https://youtube.com/watch?v=Au0Mp5goB9k',
+        sheet: './sheet/[Piano] Ichinose Lupo - a little lights (inst).pdf',
+        MIDI: './midi/[Piano] Ichinose Lupo - a little lights (inst).mid',
+        thumbnail: 'https://bsky.app/profile/did:plc:rrmnia4owkbloi63cq34wcd7/post/3lgscxqkric2q'
+    },
 ]
