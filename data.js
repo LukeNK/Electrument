@@ -571,4 +571,15 @@ let SongList = [
         MIDI: './midi/[Piano] Ichinose Lupo - a little lights (inst).mid',
         thumbnail: 'https://bsky.app/profile/did:plc:rrmnia4owkbloi63cq34wcd7/post/3lgscxqkric2q'
     },
+        {
+        name: 'First Star',
+        artist: 'Synthion',
+        game: 'NOISZ STΔRLIVHT',
+        instrument: 'Piano',
+        youtube: 'https://youtu.be/ZXM-MxAE1o8',
+        original: 'https://youtube.com/watch?v=eghAYpSDtRw',
+        sheet: './sheet/[Piano] Synthion - First Star.pdf',
+        MIDI: './midi/[Piano] Synthion - First Star.mid',
+        thumbnail: 'https://anarch.games/noiszwiki/File:CG_Good_Night.jpeg'
+    },
 ]
