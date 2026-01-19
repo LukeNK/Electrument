@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subtitle creator</title>
+
+    <style>
+        button {
+            display: block;
+            width: 100%;
+        }
+        table {
+            width: 100%;
+        }
+        textarea {
+            width: 100%;
+            height: 30rem;
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <h2>Step 1: Get subtitle from lyricstranslate</h2>
+    <table>
+        <tr>
+            <td>Original VTT</td>
+            <td>Converted SRT</td>
+        </tr>
+        <tr>
+            <td><textarea id="originalVTT"></textarea></td>
+            <td><textarea id="convertedSRT"></textarea></td>
+        </tr>
+    </table>
+    <p></p>
+    <button onclick="toSRT()">Convert</button>
+    <p>Download the SRT and use KDEnLive to match the timing with the arrangement</p>
+
+    <hr>
+
+    <h2>Step 2: Translate subtitle</h2>
+    <table>
+        <tr>
+            <td>Original SRT</td>
+            <td>Translation</td>
+        </tr>
+        <tr>
+            <td><textarea id="originalSRT"></textarea></td>
+            <td><textarea id="translation"></textarea></td>
+    </table>
+    <button onclick="translateSRT()">Translate subtitle</button>
+</body>
+<script>
+    function toSRT() {
+        let original = document.getElementById('originalVTT').value;
+        original = original.split('\n\n');
+
+        for (let block in original) {
+            original[block] = original[block].split('\n');
+            original[block][1] = original[block][1].replaceAll('.', ',');
+            original[block] = original[block].join('\n');
+        }
+
+        document.getElementById('convertedSRT').value = original.join('\n\n');
+
+        // create a download file
+        let element = document.createElement('a');
+        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(document.getElementById('convertedSRT').value));
+        element.setAttribute('download', 'subtitle.srt');
+        element.style.display = 'none';
+        document.body.appendChild(element);
+        element.click();
+        document.body.removeChild(element);
+    }
+
+    function translateSRT() {
+        let complete = document.getElementById('originalSRT').value;
+        complete = complete.split('\n\n');
+        let text = document.getElementById('translation').value;
+        text = text.split(/\n+/); // any number of new lines
+
+        console.log(complete.length, '<>', text.length);
+        for (let block in complete) {
+            complete[block] = complete[block].split('\n');
+            complete[block][2] = text[block];
+            complete[block] = complete[block].join('\n');
+        }
+
+        document.getElementById('translation').value = complete.join('\n\n');
+    }
+</script>
+</html>
