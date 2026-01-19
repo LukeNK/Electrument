@@ -571,7 +571,7 @@ let SongList = [
         MIDI: './midi/[Piano] Ichinose Lupo - a little lights (inst).mid',
         thumbnail: 'https://bsky.app/profile/did:plc:rrmnia4owkbloi63cq34wcd7/post/3lgscxqkric2q'
     },
-        {
+    {
         name: 'First Star',
         artist: 'Synthion',
         game: 'NOISZ STΔRLIVHT',
@@ -581,5 +581,15 @@ let SongList = [
         sheet: './sheet/[Piano] Synthion - First Star.pdf',
         MIDI: './midi/[Piano] Synthion - First Star.mid',
         thumbnail: 'https://anarch.games/noiszwiki/File:CG_Good_Night.jpeg'
+    },
+    {
+        name: 'Top 10 Things To Do Before You Die',
+        artist: 'YonKaGor',
+        instrument: 'Piano',
+        youtube: 'https://youtu.be/GgyRvqpUR8Q',
+        original: 'https://www.youtube.com/watch?v=Wiikal1slEI',
+        sheet: './sheet/[Piano] YonKaGor - Top 10 Things To Do Before You Die.pdf',
+        MIDI: './midi/[Piano] YonKaGor - Top 10 Things To Do Before You Die.mid',
+        thumbnail: 'https://x.com/YonKaGor/status/1507005614257365004'
     },
 ]
