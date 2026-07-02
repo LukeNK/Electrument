@@ -1,0 +1,8 @@
+url: /Electrument
+theme: null
+
+collections:
+  songs:
+    output: true
+    permalink: /songs/:slug/
+    layout: song
