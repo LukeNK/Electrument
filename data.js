@@ -592,4 +592,15 @@ let SongList = [
         MIDI: './midi/[Piano] YonKaGor - Top 10 Things To Do Before You Die.mid',
         thumbnail: 'https://x.com/YonKaGor/status/1507005614257365004'
     },
+    {
+        name: 'White Step',
+        artist: 'Irucaice',
+        vocaloid: 'Hatsune Miku',
+        instrument: 'Piano',
+        youtube: 'https://youtu.be/AjMbib1zjko',
+        original: 'https://www.youtube.com/watch?v=VX7NcFg_-s0',
+        sheet: './sheet/[Piano] Irucaice - White Step.pdf',
+        MIDI: './midi/[Piano] Irucaice - White Step.mid',
+        thumbnail: 'https://x.com/pinksan32/status/1330785186821275655'
+    },
 ]
