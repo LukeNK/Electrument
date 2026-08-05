@@ -601,6 +601,6 @@ let SongList = [
         original: 'https://www.youtube.com/watch?v=VX7NcFg_-s0',
         sheet: './sheet/[Piano] Irucaice - White Step.pdf',
         MIDI: './midi/[Piano] Irucaice - White Step.mid',
-        thumbnail: 'https://x.com/pinksan32/status/1330785186821275655'
+        thumbnail: 'https://x.com/pinksan32/status/1351807220183257088'
     },
 ]
