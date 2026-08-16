@@ -593,6 +593,17 @@ let SongList = [
         thumbnail: 'https://x.com/YonKaGor/status/1507005614257365004'
     },
     {
+        name: 'First Occurrences',
+        Chinese: '鲸影初现',
+        artist: 'Kazuki Yanagawa',
+        game: 'Heartopia',
+        instrument: 'Piano',
+        youtube: 'https://youtu.be/9lLVL1-xq8U',
+        sheet: './sheet/[Piano] Kazuki Yanagawa - First Occurrences.pdf',
+        MIDI: './midi/[Piano] Kazuki Yanagawa - First Occurrences.mid',
+        thumbnail: 'https://www.pixiv.net/en/artworks/141618646'
+    },
+    {
         name: 'White Step',
         artist: 'Irucaice',
         vocaloid: 'Hatsune Miku',
