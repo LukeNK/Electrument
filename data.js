@@ -614,4 +614,15 @@ let SongList = [
         MIDI: './midi/[Piano] Irucaice - White Step.mid',
         thumbnail: 'https://x.com/pinksan32/status/1351807220183257088'
     },
+    {
+        name: 'Smile to Smile',
+        artist: 'Ichinose Lupo',
+        vocaloid: 'Kagamine Rin',
+        'Cover singer': 'OpenUTAU ALYS',
+        youtube: 'https://youtu.be/HezUtg0_8jU',
+        original: 'https://www.youtube.com/watch?v=ESeLcQhnyDE',
+        'karaoke version': 'https://piapro.jp/t/Qgzo',
+        'English lyrics': 'https://lyricstranslate.com/en/ichinose-lupo-smile-smile-english',
+        'thumbnail and video': 'https://x.com/warabimoti_yoz/status/1637362641688743937'
+    },
 ]
